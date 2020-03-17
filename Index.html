@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!--Author - Jamie Beirne - S00196678
+	Date - 14/03/20	
+	Week 8
+-->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Company Website">
+	<meta name="keywords" content="Sales, Computers, Electronic">
+	<meta name="author" content="Jamie Beirne">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+
+<body>
+    
+    <header>
+        <p>Any queries or feedback complete and Submit </p>
+    </header>
+    <main>
+        <section>
+        <h3>
+            Please enter the enter the following information:
+        </h3>
+            
+            <form action="http://year1.me/FormTest.php" method="post">
+            
+                <label for="first_name">First name:<span class="required">*</span></label>
+                <input type="text" name="first_name" id="first_name" autofocus required><br>
+                <label for="last_name">Last Name:<span class="required">*</span></label>
+                <input type="text" name="last_name" id="last_name" autofocus required><br>
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="text" name="email" id="email" required placeholder="johndoe@example.com"><br>
+                
+               <label for="gender">Gender :</label>
+                <input type="radio" id="gender" name="gender" value="male"> Male
+                <input type="radio" id="gender" name="gender" value="Female"> Female
+                <input type="radio" id="gender" name="gender" value="Other"> Other <br>
+                
+                <label for="internet"> Heard of us:</label>
+                <fieldset>
+                    <input type="checkbox" id="internet" name="internet" value="internet" checked> Internet <br>
+                    <input type="checkbox" class="marginl" id="hear" name="paper" value="paper"> newspaper <br>
+                    <input type="checkbox" class="marginl" id="hear" name="friend" value="friend"> Friend <br>
+                    <input type="checkbox" class="marginl" id="hear" name="add" value="add"> Others <br>
+                </fieldset>
+                <br>
+                <label for="message">Query  :   </label>
+                <textarea cols="40"rows="6" id="message" placeholder="your message must be less than 200 characters" data-maxlenght="200"></textarea> <br>
+                
+                <input type="submit" name="submit" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset">
+                            
+            </form>
+            <p style="margin-left: 138px"> <span class="required">*</span> <em> indicates a required field </em></p>
+        </section>
+    </main>
+    
+</body>
+</html>
